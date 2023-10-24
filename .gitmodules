@@ -1,0 +1,3 @@
+[submodule "Deps/WinUIEdit"]
+	path = Deps/WinUIEdit
+	url = https://github.com/BreeceW/WinUIEdit
