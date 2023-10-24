@@ -26,11 +26,13 @@ namespace WinUIEditWinUI3Demo
         public MainWindow()
         {
             this.InitializeComponent();
+
+            SystemBackdrop = new MicaBackdrop();
         }
 
-        private void myButton_Click(object sender, RoutedEventArgs e)
+        private void CodeEditorControl_Loaded(object sender, RoutedEventArgs e)
         {
-            myButton.Content = "Clicked";
+            ((Control)sender).Focus(FocusState.Programmatic);
         }
     }
 }
